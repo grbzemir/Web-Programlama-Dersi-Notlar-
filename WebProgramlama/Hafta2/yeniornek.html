@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+p::first-line
+{
+    font-weight:bold ;
+    color: brown;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+p.about::first-line
+{
+color:green;
+}
+
+p::first-letter
+{
+    font-size: 48px;
+}
+ul li 
+{
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+ul li:first-child
+{
+background-color: aqua;
+}
+ul li:last-child
+{
+    background-color: red;
+}
+ul li:nth-of-type(odd)
+{
+    background-color: blue;
+}
+ul li:nth-of-type(even)
+{
+    background-color:greenyellow;
+}
+a:link 
+{
+    color : red;
+}
+a:hover 
+{
+    color:white;
+    background: green;
+}
+a:visited
+{
+    color:gray;
+}
+a:active 
+{
+    color:green;
+    background: gold;
+}
+    </style>
+    </head>
+    <body>
+
+        <h1> Sözde Seçiciler (Pseudo Selectors)</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, optio.
+        </p>
+        <p class="about">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
+            soluta!
+        </p>
+
+        <ul>
+            <li> first</li>
+            <li> second</li>
+            <li> third</li>
+            <li> fourth</li>
+            <li> fifth</li>
+        </ul>
+
+        <a href="icindekiler.html"> a:link</a>
+        <a href="#">a.visited</a>
+        <a href="#">a.hover</a>
+        <a href="#">a.active</a>
+
+        <script>
+        // alert("lütfen bir sayi giriniz."); bu kısımda sadece uyarı mesajı ekranda gösterilir!
+        prompt("lütfen bir sayi giriniz.");
+        //console.log("Merhaba deneme yazisidir...");
+        //document.write("Egemen Tekkanat");
+        //alert("Uyarı hata yapmış olabilirsin.")
+    </script>
+    </body>
+</html>

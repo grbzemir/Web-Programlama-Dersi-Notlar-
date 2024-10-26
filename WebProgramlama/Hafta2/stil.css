@@ -1,0 +1,56 @@
+p::first-line {
+    font-weight: bold;
+    color: brown;
+    word-spacing: 2px;
+    /*kelimler arası boşluğu ayarlama */
+    letter-spacing: 1px;
+    /*harfler arası boşluğu ayarlama */
+}
+
+p.about::first-line {
+    color: green;
+}
+
+p::first-letter {
+    font-size: 48px;
+}
+
+ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+ul li:first-child {
+    background-color: aqua;
+}
+
+ul li:last-child {
+    background-color: red;
+}
+
+ul li:nth-of-type(odd) {
+    background-color: blue;
+}
+
+ul li:nth-of-type(even) {
+    background-color: greenyellow;
+}
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: white;
+    background: green;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:active {
+    color: green;
+    background: gold;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Işık Aç/Kapa</title>
+        <!-- <link rel="stylesheet"></link> -->
+        <!-- <script src="main.js"></script> -->
+        <style>
+        #light {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            display: none; /*Başlangıçta ışık kapalı*/
+            margin: 20px;
+        }
+    </style>
+    </head>
+    <body>
+
+        <button id="toggleButton">Işığı Aç/Kapat</button>
+        <div id="light"></div>
+
+        <script>       
+        document.getElementById('toggleButton').addEventListener('click', function() {
+        var light = document.getElementById('light');
+
+        if (light.style.display === 'none') {
+        light.style.display = 'block'; // Işığı aç
+        } else {
+        light.style.display = 'none'; // Işığı kapat
+        }
+});
+    </script>
+    </body>
+</html>

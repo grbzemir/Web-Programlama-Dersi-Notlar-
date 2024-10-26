@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dizi Örneği</title>
+        <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        ul
+        {
+            list-style: none;
+            padding: 0;
+        }
+        li
+        {
+            background-color:  #f4f4f4;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        button
+        {
+            padding: 10px 20px;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1> Dizi Örneği </h1>
+        <button onclick="elemanlariGoster()"> Dizi Elemanlarını Goster </button>
+        <ul id="eleman"></ul>
+
+        <script>
+        function elemanlariGoster()
+        {
+            const dersler=['Veri Tabani Yönetim Sistemleri', 'Görsel Programlama','Mobil Programlama', 'Web Programlama'];
+            const elemanlar=document.getElementById('eleman');
+            elemanlar.innerHTML= ''; // içeriği boşaltılır!
+
+            for(let i=0; i<dersler.length; i++)
+            {
+            const li = document.createElement('li'); //li olusturulur!
+            li.textContent = dersler[i]; // öğesinin içeriği olarak dizideki ders adı atanır.
+            elemanlar.appendChild(li); // li öğesi, ul listesinin sonuna eklenir.
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> Bir Deneme Sayfasi</h1>
+        <p id="demo"> Bu bir paragraf</p>
+        <br>
+        <button type="button" onclick="yaziyiDegistir()"> Değiştir </button>
+
+        <script>
+        function yaziyiDegistir()
+        {
+            // getElementById ile  ulaşmak istediğimiz elemana id yardımı ile ulaşıyoruz
+            // innerHtml bir özelliktir. ve ulaşılşan elementin içeriğini girilen string olarak günceller
+            document.getElementById("demo").innerHTML="Yazi Basari ile değiştirildi!!";
+        }
+    </script>
+    </body>
+</html>

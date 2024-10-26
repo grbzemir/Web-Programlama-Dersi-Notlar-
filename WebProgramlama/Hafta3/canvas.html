@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <canvas id="myShape" width="750" height="480"></canvas>
+        <p> deneme</p>
+        <script>
+        //JavaScript kodu!
+        var context = document.getElementById("myShape");
+
+    var disyapi = context.getContext("2d");
+    disyapi.fillStyle = "rgb(98,150,202)";
+    disyapi.fillRect(0,0,640,480);
+
+    var pencere1 = context.getContext("2d");
+    pencere1.fillStyle = "rgb(255,255,255)";
+    pencere1.fillRect(10,10, 150, 150);
+
+    var pencere2 = context.getContext("2d");
+    pencere2.fillStyle = "rgb(255,255,255)";
+    pencere2.fillRect(480,10, 150, 150);
+
+    var pencere3 = context.getContext("2d");
+    pencere3.fillStyle = "rgb(255,255,255)";
+    pencere3.fillRect(240,10, 150, 150);
+
+    var kapi = context.getContext("2d");
+    kapi.fillStyle="rgb(100,100,100)";
+    kapi.fillRect(480, 240, 150,220);
+
+    var k_kolu = context.getContext("2d");
+    k_kolu.fillStyle = "rgb(0,0,0)";
+    k_kolu.fillRect(480, 360, 20,10);
+    
+    </script>
+    </body>
+</html>

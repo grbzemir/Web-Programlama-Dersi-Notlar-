@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <script src="dene.js"></script> -->
+    </head>
+    <body>
+        <script>
+            function turnOnOff()
+            {
+            let image = document.getElementById('Image')
+            if(image.src.match("ONbulb"))
+               image.src="OFFbulb.jpg";
+            else 
+            image.src="ONbulb.jpg"
+            }
+    </script>
+        <img id="Image" onclick="turnOnOff()" src="OFFbulb.jpg">
+        <p>Turn on And Turn Light</p>
+    </body>
+</html>

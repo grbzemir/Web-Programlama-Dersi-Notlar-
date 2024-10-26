@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        var bitirilenbolum = prompt("Üniversitede hangi bölümde okudunuz?");
+        var yasiniz = prompt("kaç yasindasiniz");
+
+        if(
+        ((bitirilenbolum == "Bilgisayar Mühendisliği") ||
+        (bitirilenbolum == "Bilgisayar Programcılıgi") ||
+        (bitirilenbolum == "Yönetim Bilişim Sistemleri"))
+         &&
+        (yasiniz < 35)
+        )
+        {
+            alert("iş görüşmesine salı günü saat 15:00 da gelebilirsiniz");
+        }
+        else 
+        {
+            alert("aradığımız kriterlere uymamaktadır.");
+        }
+    </script>
+    </body>
+</html>

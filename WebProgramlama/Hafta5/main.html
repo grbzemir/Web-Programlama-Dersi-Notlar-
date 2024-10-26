@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drag N Drop Ornek</title>
+        <style>
+        #dragItem 
+        {
+            width: 150px;
+            height: 150px;
+            background-color: #f0a500;
+            text-align: center;
+            line-height: 150px;
+            margin-bottom: 20px;
+            cursor:pointer;
+            color:white;
+            font-size: 20px;
+        }
+        #dropArea 
+        {
+            width: 250px;
+            height: 250px;
+            border:  2px dashed #888;
+            text-align: center;
+            line-height: 200px;
+            color:white;
+            font-size: 18px;
+        }
+        #dropArea.hovered 
+        {
+            border-color: #f0a500;
+            color: #f0a500;
+        }
+    </style>
+    </head>
+    <body>
+        <h2> Sürükle Bırak Örneği </h2>
+
+        <div id="dragItem" draggable="true"> Sürükle </div>
+        <div id="dropArea"> Bırakılacak Alan </div>
+
+        <script>
+        var dragItem = document.getElementById("dragItem");
+        var dropArea = document.getElementById("dropArea");
+
+        dragItem.addEventListener('dragstart', function(e)
+        {
+            e.dataTransfer.setData('text', e.target.id) //sürüklenen değerin id si alınır
+        });
+
+        //Sürüklenecek eleman fare ile droparea üzerinde gelince yapılacakllar 
+        dropArea.addEventListener('dragover', function(e)
+        {
+            e.preventDefault(); // sayfanın yenilenmesini engeller
+            dropArea.classList.add('hovered'); // görsel için class ekle
+        });
+    // sürüklenen eleman ordan ayrıldığında
+    dropArea.addEventListener('dragleave', function(e)
+    {
+    dropArea.classList.remove('hovered'); // eklenen classı kaldırırsın
+    });
+
+        // sürüklenen öğe bıraklıdğında ne olacak :
+        dropArea.addEventListener('drop', function(e)
+    {
+            e.preventDefault();
+            var data = e.dataTransfer.getData('text'); // id yi çek
+            var dragElement = document.getElementById(data); // sürüklenen öğeyi al
+            dropArea.appendChild(dragElement); //sürüklene öğeyi alana bırak
+            dropArea.classList.remove('hovered');
+    });
+    </script>
+    </body>
+</html>

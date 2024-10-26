@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form name="gonder" action="deneme.php" method="get">
+            <fieldset>
+                <legend> Kişisel Bilgiler </legend>
+                <form action="MAILTO:egementekkanat@yahoo.com" method="post"
+                    enctype="text/plain">
+                    isim
+                    <input type="text" name="isim">
+                    <br>
+                    Soyisim
+                    <input type="text" nanme="soyisim">
+
+                    <h3> Cinsiyetiniz</h3>
+                    Erkek :
+                    <input type="radio" checked="checked" name="cinsiyet"
+                        value="bay">
+                    <br>
+                    Kadın :
+                    <input type="radio" name="cinsiyet" value="kadın">
+                    <br>
+                    <input type="submit" value="gonder">
+                    <input type="reset" value="temizle">
+                </form>
+            </fieldset>
+            <br>
+            isim
+            <input type="text" name="isim">
+            <br>
+            Soyisim
+            <input type="text" nanme="soyisim">
+            <br>
+            şifre
+            <input type="password" nanme="soyisim">
+
+            <h3> bildiğim diller :</h3>
+            C# <input type="checkbox" name="diller" value="C#">
+            <br>
+            JAVA<input type="checkbox" name="diller" value="JAVA">
+            <br>
+            kotlin<input type="checkbox" name="diller" value="kotlin">
+
+            <h3> Eğitim Durumunuz :</h3>
+            <select name="egitim">
+                <option value="doktora"> Doktora</option>
+                <option value="master"> Yüksek Lisans</option>
+                <option value="lisans" selected="selected"> Lisans</option>
+                <option value="önlisans"> ÖnLisans</option>
+                <option value="Lise"> Lise</option>
+                <option value="Ortaokul"> Ortaokul</option>
+            </select>
+
+            <h3> mesaj kutuları</h3>
+            <textarea rows="10" cols="45">
+            Deneme Mesajı dikkate almayınız!
+           </textarea>
+
+            <br>
+            <input type="button" value="Gonder">
+
+        </form>
+
+        <script src="deneme.js">
+
+    </script>
+    </body>
+</html>
