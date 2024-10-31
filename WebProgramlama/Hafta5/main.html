@@ -63,13 +63,13 @@
 
         // sürüklenen öğe bıraklıdğında ne olacak :
         dropArea.addEventListener('drop', function(e)
-    {
+        {
             e.preventDefault();
             var data = e.dataTransfer.getData('text'); // id yi çek
             var dragElement = document.getElementById(data); // sürüklenen öğeyi al
             dropArea.appendChild(dragElement); //sürüklene öğeyi alana bırak
             dropArea.classList.remove('hovered');
-    });
+        });
     </script>
     </body>
 </html>
