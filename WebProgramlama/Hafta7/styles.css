@@ -20,7 +20,7 @@ header {
     gap: 15px;
 }
 
-.menu > li {
+.menu>li {
     position: relative;
 }
 
@@ -57,12 +57,14 @@ header {
     border-radius: 8px;
     padding: 20px;
     width: 150px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*gölgelendirme işlemi*/
     transition: transform 0.2s;
 }
 
 .product:hover {
     transform: translateY(-5px);
+    /*mouse üstüne gelince yukarı doğru kaydırma*/
 }
 
 button {
@@ -76,7 +78,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: black;
 }
 
 .modal {
@@ -85,6 +87,7 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* merkezde olmasını sağlar */
     background-color: white;
     padding: 20px;
     border: 1px solid #ddd;

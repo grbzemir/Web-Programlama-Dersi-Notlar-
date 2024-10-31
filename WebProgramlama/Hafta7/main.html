@@ -1,109 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alışveriş Sitesi</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div><img src="header.jpg" alt="Alışveriş Sitesi" width="100%" 
-            height="300px" class="header-image"></div>
-    
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Kategoriler</a>
-                    <ul class="dropdown">
-                        <li><a href="#elektronik">Elektronik</a></li>
-                        <li><a href="#giyim">Giyim</a></li>
-                        <li><a href="#kozmatik">Kozmetik</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" onclick="openRegister()">Kayıt Ol</a></li>
-                <li><a href="#" onclick="openLogin()">Giriş Yap</a></li>
-                <li><a href="#" onclick="openCart()">Sepetim</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="category" id="elektronik">
-            <h2>Elektronik</h2>
-            <div class="product-list">
-                <div class="product" data-price="1200">
-                    <h3>Telefon</h3>
-                    <p>Fiyat: ₺1200</p>
-                    <button onclick="sepeteEkle('Telefon', 1200)">Sepete Ekle</button>
-                </div>
-                <div class="product" data-price="3000">
-                    <h3>Laptop</h3>
-                    <p>Fiyat: ₺3000</p>
-                    <button onclick="sepeteEkle('Laptop', 3000)">Sepete Ekle</button>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alışveriş Sitesi</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="header.jpg" alt="Alışveriş Sitesi" width="100%"
+                    height="300px" class="header-image">
             </div>
-        </section>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Kategoriler</a>
+                        <ul class="dropdown">
+                            <li><a href="#elektronik">Elektronik</a></li>
+                            <li><a href="#giyim">Giyim</a></li>
+                            <li><a href="#kozmatik">Kozmetik</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="openRegister()">Kayıt Ol</a></li>
+                    <li><a href="#" onclick="openLogin()">Giriş Yap</a></li>
+                    <li><a href="#" onclick="openCart()">Sepetim</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <section class="category" id="giyim">
-            <h2>Giyim </h2>
-            <div class="product-list">
-                <div class="product" data-price="500">
-                    <h3>Kazak </h3>
-                    <p>Fiyat: ₺200</p>
-                    <button onclick="sepeteEklet('Kazak',500)">Sepete Ekle</button>
+        <main>
+            <section class="category" id="elektronik">
+                <h2>Elektronik</h2>
+                <div class="product-list">
+                    <div class="product" data-price="1200">
+                        <h3>Telefon</h3>
+                        <p>Fiyat: ₺1200</p>
+                        <button onclick="sepeteEkle('Telefon', 1200)">Sepete
+                            Ekle</button>
+                    </div>
+                    <div class="product" data-price="3000">
+                        <h3>Laptop</h3>
+                        <p>Fiyat: ₺3000</p>
+                        <button onclick="sepeteEkle('Laptop', 3000)">Sepete
+                            Ekle</button>
+                    </div>
                 </div>
-                <div class="product" data-price="750">
-                    <h3>Etek </h3>
-                    <p>Fiyat: ₺350</p>
-                    <button onclick="sepeteEkle('Etek',750)">Sepete Ekle</button>
+            </section>
+
+            <section class="category" id="giyim">
+                <h2>Giyim </h2>
+                <div class="product-list">
+                    <div class="product" data-price="500">
+                        <h3>Kazak </h3>
+                        <p>Fiyat: ₺200</p>
+                        <button onclick="sepeteEklet('Kazak',500)">Sepete
+                            Ekle</button>
+                    </div>
+                    <div class="product" data-price="750">
+                        <h3>Etek </h3>
+                        <p>Fiyat: ₺350</p>
+                        <button onclick="sepeteEkle('Etek',750)">Sepete
+                            Ekle</button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="category" id="kozmatik">
-            <h2>Giyim</h2>
-            <div class="product-list">
-                <div class="product" data-price="200">
-                    <h3>Ruj</h3>
-                    <p>Fiyat: ₺50</p>
-                    <button onclick="sepeteEkle('Ruj',200)">Sepete Ekle</button>
+            <section class="category" id="kozmatik">
+                <h2>Kozmetik</h2>
+                <div class="product-list">
+                    <div class="product" data-price="200">
+                        <h3>Ruj</h3>
+                        <p>Fiyat: ₺50</p>
+                        <button onclick="sepeteEkle('Ruj',200)">Sepete
+                            Ekle</button>
+                    </div>
+                    <div class="product" data-price="300">
+                        <h3>Allık</h3>
+                        <p>Fiyat: ₺150</p>
+                        <button onclick="sepeteEkle('Allık',300)">Sepete
+                            Ekle</button>
+                    </div>
                 </div>
-                <div class="product" data-price="300">
-                    <h3>Allık</h3>
-                    <p>Fiyat: ₺150</p>
-                    <button onclick="sepeteEkle('Allık',300)">Sepete Ekle</button>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <!-- Register Form -->
-    <div id="register-form" class="modal">
-        <h2>Register</h2>
-        <input type="text" id="reg-username" placeholder="Kullanıcı Adı">
-        <input type="password" id="reg-password" placeholder="Şifre">
-        <button onclick="register()">Kaydol</button>
-        <button onclick="kapatRegister()">Kapat</button>
-    </div>
+        <!-- Register Form -->
+        <div id="register-form" class="modal">
+            <h2>Register</h2>
+            <input type="text" id="reg-username" placeholder="Kullanıcı Adı">
+            <input type="password" id="reg-password" placeholder="Şifre">
+            <button onclick="register()">Kaydol</button>
+            <button onclick="kapatRegister()">Kapat</button>
+        </div>
 
-    <!-- Login Form -->
-    <div id="login-form" class="modal">
-        <h2>Login</h2>
-        <input type="text" id="login-username" placeholder="Kullanıcı Adı">
-        <input type="password" id="login-password" placeholder="Şifre">
-        <button onclick="login()">Giriş Yap</button>
-        <button onclick="kapatLogin()">Kapat</button>
-    </div>
+        <!-- Login Form -->
+        <div id="login-form" class="modal">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Kullanıcı Adı">
+            <input type="password" id="login-password" placeholder="Şifre">
+            <button onclick="login()">Giriş Yap</button>
+            <button onclick="kapatLogin()">Kapat</button>
+        </div>
 
-    <!-- Cart Section -->
-    <div id="cart-section" class="modal">
-        <h2>Sepet</h2>
-        <ul id="cart-items"></ul>
-        <p>Toplam: ₺<span id="cart-total">0</span></p>
-        <button onclick="clearCart()">Sepeti Temizle</button>
-        <button onclick="kapatSepet()"> Sepeti Kapat</button>
-    </div>
+        <!-- Cart Section -->
+        <div id="cart-section" class="modal">
+            <h2>Sepet</h2>
+            <ul id="cart-items"></ul>
+            <p>Toplam: ₺<span id="cart-total">0</span></p>
+            <button onclick="clearCart()">Sepeti Temizle</button>
+            <button onclick="kapatSepet()"> Sepeti Kapat</button>
+        </div>
 
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>
