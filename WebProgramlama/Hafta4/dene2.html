@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Işık Aç/Kapa</title>
-        <!-- <link rel="stylesheet"></link> -->
+        <!-- <link rel="stylesheet" href="style.css"></link> -->
         <!-- <script src="main.js"></script> -->
         <style>
         #light {
@@ -22,7 +22,7 @@
         <div id="light"></div>
 
         <script>       
-        document.getElementById('toggleButton').addEventListener('click', function() {
+        var toggleButton = document.getElementById('toggleButton').addEventListener('click', function() {
         var light = document.getElementById('light');
 
         if (light.style.display === 'none') {

@@ -1,6 +1,4 @@
 console.log("deneme");
-
-
 let email = "egetek86@gmail.com"
 console.log(email)
 
@@ -26,4 +24,4 @@ console.log(adsoyad.toLocaleLowerCase());
 
 //index değerini çekme
 let index = adsoyad.indexOf("T");
-console.log("T harfinin indeksi : " +index);
+console.log("T harfinin indeksi : " + index);
