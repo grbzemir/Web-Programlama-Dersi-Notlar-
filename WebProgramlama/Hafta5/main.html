@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <li>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Drag N Drop Ornek</title>
+        <!-- <link rel="stylesheet" href="style.css"></link>
+        <script src="emir.js"></script> -->
         <style>
         #dragItem 
         {
@@ -67,7 +69,7 @@
             e.preventDefault();
             var data = e.dataTransfer.getData('text'); // id yi çek
             var dragElement = document.getElementById(data); // sürüklenen öğeyi al
-            dropArea.appendChild(dragElement); //sürüklene öğeyi alana bırak
+            dropArea.appendChild(dragElement); //sürüklenen öğeyi alana bırak
             dropArea.classList.remove('hovered');
         });
     </script>
