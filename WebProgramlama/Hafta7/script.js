@@ -76,7 +76,7 @@ function register() {
         alert("Kullanıcı adı ve şifre giriniz!");
     }
 }
-
+//Giriş
 function login() {
     const username = document.getElementById("login-username").value;
     const password = document.getElementById("login-password").value;
