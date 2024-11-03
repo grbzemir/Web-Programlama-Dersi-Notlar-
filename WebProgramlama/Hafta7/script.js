@@ -31,6 +31,7 @@ function updateCart() {
 function removeFromCart(index) {
     totalPrice -= cartItems[index].price;
     cartItems.splice(index, 1);
+    /*Splice ile çıkarma işlemi yapılıyor*/
     updateCart();
 }
 
