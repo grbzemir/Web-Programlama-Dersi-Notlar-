@@ -60,7 +60,8 @@
     // sürüklenen eleman ordan ayrıldığında
     dropArea.addEventListener('dragleave', function(e)
     {
-    dropArea.classList.remove('hovered'); // eklenen classı kaldırırsın
+         e.preventDefault(); // sayfanın yenilenmesini engeller
+         dropArea.classList.remove('hovered'); // eklenen classı kaldırırsın
     });
 
         // sürüklenen öğe bıraklıdğında ne olacak :
