@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <style>
+            /* p::first-line: Tüm <p> etiketlerinin ilk satırını biçimlendirir. */
 p::first-line
 {
     font-weight:bold ;
@@ -35,10 +36,12 @@ ul li:last-child
 {
     background-color: red;
 }
+/* tek olanları mavi yap */
 ul li:nth-of-type(odd)
 {
     background-color: blue;
 }
+/* çift olanları sarımtırak yap */
 ul li:nth-of-type(even)
 {
     background-color:greenyellow;
