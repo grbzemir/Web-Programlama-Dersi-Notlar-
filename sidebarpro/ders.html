@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Öğrenci Ders Sistemi</title>
+        <link rel="stylesheet" href="stil.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Öğrenci Ders Sistemi</h1>
+            <div id="auth-section">
+                <h2>Kayıt Ol</h2>
+                <input type="text" id="register-name"
+                    placeholder="Adınızı giriniz">
+                <input type="password" id="register-password"
+                    placeholder="Şifre oluşturun">
+                <button id="register-btn">Kayıt Ol</button>
+
+                <h2>Giriş Yap</h2>
+                <input type="text" id="login-name"
+                    placeholder="Adınızı giriniz">
+                <input type="password" id="login-password"
+                    placeholder="Şifrenizi giriniz">
+                <button id="login-btn">Giriş Yap</button>
+            </div>
+
+            <div id="student-panel" style="display: none;">
+                <!-- gizleme yapmak için kullanılır none display:-->
+                <h2>Hoş Geldiniz, <span id="student-name"></span></h2>
+                <h3>Mevcut Dersler</h3>
+                <ul id="course-list">
+                    <!-- Sistem dersleri otomatik ekleyecek -->
+                </ul>
+
+                <h3>Eklenen Dersler</h3>
+                <ul id="added-courses">
+                    <!-- Öğrencinin eklediği dersler buraya eklenecek -->
+                </ul>
+
+                <!-- Rapor Oluştur ve Gönder Butonu -->
+                <button id="generate-report-btn">Rapor Oluştur ve
+                    Gönder</button>
+
+                <!-- Çıkış Yap Butonu -->
+                <button id="logout-btn">Çıkış Yap</button>
+            </div>
+        </div>
+        <script src="ders.js"></script>
+    </body>
+</html>

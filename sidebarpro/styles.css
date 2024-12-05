@@ -1,0 +1,121 @@
+body
+{
+    font-family: Arial,  sans-serif;
+    margin :0;
+    padding: 0;
+    height: 100vh;
+    display: flex; /*ortalayacak ensek bir şekilde düzeni hazirlar*/
+    justify-content: center; /*içeriği yatay olarak ortala*/
+    align-items: center; /* dikeyde ortala*/
+    background-color: #f4f4f9;
+    transition: margin-left 0.3s; /* sidebar açıldığında sayfa gövedsinin kayması için animasyon ekler*/
+
+}
+.sidebar
+{
+    width: 200px;
+    height: 100%;
+    position: fixed; /* sidebar sabit kalacak, sayfa içerisinde kaymaz*/
+    top:0;
+    left:-200px;
+    background-color: #2c3e50;
+    color: white;
+    padding-top: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s;
+}
+.sidebarHeader
+{
+    text-align: right;
+    padding: 10px;
+}
+.sidebarHeader .fa-xmark /* kapama iconun stilini tanımlar*/
+{
+    cursor: white;
+    cursor: pointer;
+}
+.menu
+{
+    list-style: none;
+    padding: 0;
+}
+.menu li
+{
+    padding: 10px;
+    border-bottom: 1px solid #34495e;
+}
+.main-container
+{
+    text-align: center;
+    background: white;
+    padding:30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: absolute; /*sayfa ne olursa olsun ortalanacak*/
+    transform: translate(-50%,-50%); /*konumu yatay ve dikey ortalar*/
+    top :50%;
+    width: 350px;
+}
+.login-form input
+{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    border-radius:  5px;
+    border : 1px solid #ddd;
+}
+button
+{
+    margin-top: 10px;
+    padding: 10px, 20px;
+    background-color:  #007bff;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: #0056b3;
+}
+.modal
+{
+    display: none; 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+.model-content
+{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+.model-content input
+{
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.close
+{
+    float:right;
+    font-size: 20px;
+    cursor: pointer;
+}
+#sideBarToggle
+{
+    font-size: 30px;
+    color:#333;
+    cursor: pointer;
+    position:fixed;
+    z-index: 100; /*daha önde gözüksün diye*/
+    top: 20px;
+    left :20px;
+}
