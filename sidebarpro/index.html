@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SideBar Ornegi</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <i class="fa-solid fa-bars" id="sideBarToggle"></i> <!--Sidebar açma iconu-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SideBar Ornegi</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <i class="fa-solid fa-bars" id="sideBarToggle"></i>
+        <!--Sidebar açma iconu-->
         <div class="sidebar" id="sidebar">
             <div class="sidebarHeader">
-                <i class="fa-solid fa-xmark fa 2xl" id="sidebarClose"></i> <!--Sidebar kapama-->
+                <i class="fa-solid fa-xmark fa 2xl" id="sidebarClose"></i>
+                <!--Sidebar kapama-->
             </div>
             <ul class="menu">
                 <li><a href="#"> Ana Sayfa</a></li>
@@ -24,23 +27,28 @@
         <div class="main-container">
             <div class="login-form">
                 <h2> Giriş Yap </h2>
-                <input type="text" id="login-username" placeholder="kullanci adi" required>
-                <input type="password" id="login-password" placeholder="şifre" required>
+                <input type="text" id="login-username"
+                    placeholder="kullanıcı adi" required>
+                <input type="password" id="login-password" placeholder="şifre"
+                    required>
                 <button onclick="login()"> Giris Yap</button>
                 <button onclick="registerModal()">Kayit Ol</button>
             </div>
         </div>
 
         <!-- Kayıt  modal-->
-         <div class="modal" id="registerModal">
+        <div class="modal" id="registerModal">
             <div class="modal-content">
-                <span class="close" onclick="closeRegisterModal()"> &times;</span>
+                <span class="close" onclick="closeRegisterModal()">
+                    &times;</span>
                 <h2> kayit ol</h2>
-                <input type="text" id="register-username" placeholder="kullanci adi" required>
-                <input type="password" id="register-password" placeholder="şifre" required>
+                <input type="text" id="register-username"
+                    placeholder="kullanıcı adi" required>
+                <input type="password" id="register-password"
+                    placeholder="şifre" required>
                 <button onclick="register()"> Kaydet</button>
             </div>
-         </div>
-         <script src="script.js"></script>
-</body>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>

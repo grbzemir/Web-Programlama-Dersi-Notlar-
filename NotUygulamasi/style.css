@@ -6,24 +6,25 @@
 
 body {
   background-color: #f5f1ed;
-
   display: flex;
   flex-wrap: wrap;
+  /* öğelerin boyutlarını küçütmeden sabit tutuyor*/
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding-top: 3rem;
 }
 
-.yeniNot{
-    background-color: #9ec862;
-    border-radius: 3px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
+.yeniNot {
+  background-color: #9ec862;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  /* sabit konumda */
+  top: 1rem;
+  right: 1rem;
 }
 
 .notlar {
@@ -37,8 +38,9 @@ body {
 .notlar .araclar {
   background-color: #9ec862;
   display: flex;
-    justify-content: flex-end;
-    padding: 0.5rem;
+  justify-content: flex-end;
+  /* yatay eksende sıralar */
+  padding: 0.5rem;
 }
 
 .notlar .araclar button {
@@ -51,24 +53,29 @@ body {
 }
 
 .notlar .notSayfa {
-   background-color: lightgoldenrodyellow;
+  background-color: lightgoldenrodyellow;
   overflow: hidden;
+  /*taşmaları engelliyor*/
   height: 400px;
   width: 100%;
   padding: 30px;
 }
 
 .notlar textarea {
-    padding: 30px;
-    outline: none;
-    font-family: inherit;
-    font-size: 1.2rem;
-    border: none;
-    height: 400px;
-    width: 100%;
-    background-color: #DAD2BC;
+  padding: 30px;
+  outline: none;
+  /* tıklandığında odaklanma çerçevesini kaldırır */
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  background-color: #DAD2BC;
 }
 
 .notlar .hidden {
-    display: none;
+  display: none;
+  /*Bu özellik,
+    bir öğeyi tamamen gizler. Öğe,
+    DOM'da var olmaya devam etse de, web sayfasında hiç yer kaplamaz ve kullanıcı tarafından görülmez.*/
 }
